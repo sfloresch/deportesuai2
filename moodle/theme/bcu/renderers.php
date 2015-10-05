@@ -318,7 +318,8 @@ class theme_bcu_core_renderer extends core_renderer {
             }
             
             if (!empty($PAGE->theme->settings->enablemyhome)) {
-                $branchtitle = get_string('myhome');
+                //$branchtitle = get_string('myhome');
+            	$branchtitle = "Mis Rutinas";
                 $branchlabel = '<i class="fa fa-dashboard"></i> '.$branchtitle;
                 $branchurl   = new moodle_url('/my/index.php');
                 $branchsort  = 9999;
@@ -326,7 +327,8 @@ class theme_bcu_core_renderer extends core_renderer {
             }
             
             if (!empty($PAGE->theme->settings->enableevents)) {
-                $branchtitle = get_string('events', 'theme_bcu');
+                //$branchtitle = get_string('events', 'theme_bcu');
+            	$branchtitle = "Mis Estadisticas";
                 $branchlabel = '<i class="fa fa-calendar"></i> '.$branchtitle;
                 $branchurl   = new moodle_url('/calendar/view.php');
                 $branchsort  = 10000;
@@ -334,7 +336,8 @@ class theme_bcu_core_renderer extends core_renderer {
             }
             
             if (!empty($PAGE->theme->settings->enablemysites)) {
-                $branchtitle = get_string('mysites', 'theme_bcu');
+                //$branchtitle = get_string('mysites', 'theme_bcu');
+                $branchtitle = "Fitnessgram";
                 $branchlabel = '<i class="fa fa-briefcase"></i><span class="menutitle">'.$branchtitle.'</span>';
                 $branchurl   = new moodle_url('/my/index.php');
                 $branchsort  = 10001;
